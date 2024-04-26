@@ -3,3 +3,4 @@ DROP USER 'teacher'@'localhost';
 CREATE USER 'teacher'@'localhost' IDENTIFIED BY 'teacher';
 GRANT SELECT ON v_studentsGrades TO 'teacher'@'localhost';
 GRANT SELECT ON v_studentsBadGrades TO 'teacher'@'localhost';
+GRANT SELECT On v_absentStudents TO 'teacher'@'localhost';
