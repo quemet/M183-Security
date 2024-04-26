@@ -1,6 +1,8 @@
 --	Une vue v_studentsGrades soit présente.
 -- Cette vue affiche le nom et le prénom de l’étudiant, le cours évalué, la date d’évaluation et la note obtenue.
 
+USE db_students;
+
 CREATE VIEW v_studentsGrades AS 
 SELECT stuName, stuFirstName, t_course.courName, t_evaluation.evaDate, t_evaluation.evaGrade 
 FROM t_student 
